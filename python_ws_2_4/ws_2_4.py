@@ -19,3 +19,10 @@ print(f"허균: {information['허균']}")
 print(f"남영로: {information['남영로']}")
 print(f"작자 미상: {information['작자 미상']}")
 print(f"임제: {information['임제']}")
+
+list_a = list(information)
+
+print(list_a)
+
+for i in list_a:
+    print(i)
