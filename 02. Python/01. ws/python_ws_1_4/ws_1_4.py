@@ -5,5 +5,5 @@ r = 15
 
 print(f'원주율 : {round(circum, 15)}')
 print(f'반지름 : {r}')
-print(f'원의 둘레 : {r*2*circum}')
-print(f'원의 넓이 : {r*r*circum}')
+print(f'원의 둘레 : {r * 2 * circum}')
+print(f'원의 넓이 : {r * r * circum}')
