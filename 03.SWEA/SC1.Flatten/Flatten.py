@@ -18,7 +18,7 @@ for test_case in range(1, T+1):
         # 해당 인덱스로 값 찾아가서 -1 +1
         heights[max_index] -= 1
         heights[min_index] += 1
-        # 덤프 횟수 차감
+        # 덤프 횟수 차감하고 재할당
         dump -= 1
     # 결과 출력
     print(f'#{test_case}', max(heights) - min(heights))
