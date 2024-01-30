@@ -1,6 +1,5 @@
 import sys
 sys.stdin = open('input.txt')
-
 # 테스트케이스 수
 T = 10
 for test_case in range(1, T+1):

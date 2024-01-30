@@ -21,21 +21,21 @@ for test_case in range(1, T+1):
             result = 0
             break
         # 그렇지 않을 때는
-        else:
-            start = 0
-            battery = K
-            count = 0
-            # start가 목적지 도착할 때까지, 배터리 감소 start 증가
-            while start < N:
-                start += 1
-                battery -= 1
-                # 만약 start가 정류장에 도착했고, 배터리가 다음 정류장까지 못갈 경우
-                if start in charge_arr and battery < diff_dict[start]:
-                    # 배터리 충전
-                    battery = K
-                    # 충전 횟수 증가
-                    count += 1
-            # 충전 횟수를 결과 값에 저장
-            result = count
+    else:
+        start = 0
+        battery = K
+        count = 0
+        # start가 목적지 도착할 때까지, 배터리 감소 start 증가
+        while start < N:
+            start += 1
+            battery -= 1
+            # 만약 start가 정류장에 도착했고, 배터리가 다음 정류장까지 못갈 경우
+            if start in charge_arr and battery < diff_dict[start]:
+                # 배터리 충전
+                battery = K
+                # 충전 횟수 증가
+                count += 1
+        # 충전 횟수를 결과 값에 저장
+        result = count
     # 테케와 결과 값 같이 출력      
     print(f'#{test_case} {result}')
