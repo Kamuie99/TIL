@@ -6,9 +6,7 @@ for test_case in range(1, T+1):
     # 해당 케이스에서 칠할 영역개수 N을 받는다.
     N = int(input())
     # 10 * 10의 2차원 배열을 만든다.
-    field = []
-    for i in range(10):
-        field.append([0]*10)
+    field = [[0 for _ in range(10)] for _ in range(10)]
     # 칠할 영역 개수만큼 칸을 칠한다.
     for i in range(N):
         x1, y1, x2, y2, color = map(int, input().split())
