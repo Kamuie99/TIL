@@ -33,4 +33,4 @@ for test_case in range(1, T+1):
         else:
             sero -= 1
 
-    print(garo-1)
+    print(f'#{test_case} {garo-1}')
