@@ -12,7 +12,7 @@ for test_case in range(1, T+1):
         if i in opened or i in closed:
             gwalhos.append(i)
     # print(gwalhos) # 검증 중
-            
+    print(gwalhos)
     stack = []
     result = 1
     for g in gwalhos:
