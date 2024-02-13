@@ -1,5 +1,5 @@
 from collections import deque
-
+# 자리 바꾼날 커밋 해보기
 def corona(N, classroom):
     # 방문 여부를 저장하기 위한 2차원 배열
     visited = [[False] * N for _ in range(N)]
