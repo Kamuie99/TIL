@@ -2,7 +2,6 @@ import sys
 sys.stdin = open('input.txt')
 
 T = int(input())
-
 for test_case in range(1, T+1):
     N, M = map(int, input().split())
     field = [list(map(int, input().split())) for i in range(N)]
@@ -24,4 +23,4 @@ for test_case in range(1, T+1):
             if j+1 < M:
                 temp += field[i][j+1]
             results.append(temp)
-    print(max(results))
+    print(f'#{test_case} {max(results)}')
