@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <form>
+    <div>
+      <label for="user"> USERNAME: </label> 
+      <input type="text" id="user" placeholder="아이디를 입력 해주세요.">
+    </div>
+    <div>
+      <label for="pw">PWD: </label>
+      <input type="password" id="pw">
+      <button>로그인</button>
+    </div>
+  </form>
+
+  <script>
+    function focusInput(inputId) {
+      const input = document.getElementById(inputId);
+      input.focus();
+    }
+  </script>
+</body>
+</html>

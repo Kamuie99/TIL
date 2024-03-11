@@ -1,0 +1,86 @@
+body {
+  background-color: #FAFAFA;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.section {
+  background-color: #FAFAFA;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.about__icon {
+  width: 500px;
+}
+
+.about__card_title p {
+  display: flex;
+  text-align: left;
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+.about__card_title strong {
+  font-weight: bold;
+}
+
+.about__card {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 5px;
+}
+
+.about__card p {
+  font-weight: bold;
+}
+
+.about__card_company {
+  margin-top: 15px;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+}
+
+.about__card_company img {
+  width: 200px;
+}
+
+.img_card {
+  width: 500px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: bold;
+
+  border-bottom: 10px solid #52BAFF;
+}
+
+.img_card img {
+  animation: shake 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(0px, 6px) rotate(0deg); }
+  
+  50% { transform: translate(0px, 0px) rotate(0deg); }
+  
+  100% { transform: translate(0px, 6px) rotate(0deg); }
+}

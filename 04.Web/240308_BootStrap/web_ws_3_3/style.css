@@ -1,0 +1,27 @@
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.remember_forgot {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.remember_forgot a {
+  text-decoration: none;
+}
+
+.alert {
+  background-color: red;
+  color: white;
+
+  max-width: 600px;
+  min-width: 400px;
+}

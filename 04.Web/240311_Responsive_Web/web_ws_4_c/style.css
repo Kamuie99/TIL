@@ -1,0 +1,34 @@
+footer {
+  height: 120px;
+}
+
+.footer_inner {
+  height: 100%;
+  background-color: #212529;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_inner p {
+  margin-bottom: 0;
+}
+
+.footer_link {
+  margin-top: 20px;
+}
+
+.footer_link a:link {
+  color: white;
+}
+
+.footer_link a:visited {
+  color: white;
+}
+
+.footer_link a {
+  margin-left: 10px;
+}

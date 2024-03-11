@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* div p는 자손 결합자로, 어떤 깊이에 있든 상관 없이 <div> 내에
+      존재하는 모든 <p> 요소를 선택한다. */
+    div p {
+      color: blue;
+      margin-left: 50px;
+    }
+    /* div > p 는 자식결합자로 <div>내에 직접적으로 속한 모든 <p> 요소
+      를 선택하며, 중간에 다른 요소가 있으면 선택되지 않는다.*/
+    div > p {
+      color: crimson;
+      margin-left: 0px;
+    }
+    * {
+      font-size: 25px;
+    }
+
+  </style>
+</head>
+<body>
+  <div><!-- 밑의 자식들은 div p 자손 결합자 반영 후 div > p 자식 결합자가 덮어짐-->
+    <p>자식</p>
+    <a><!-- 이때 손자는 div 내에 있지만, a 태그 내부에 있으므로 div > p 가 적용 되지 않음-->
+      <p>손자</p>
+    </a>
+    <p>자식</p>
+  </div>
+</body>
+</html>
