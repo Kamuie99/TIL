@@ -44,3 +44,10 @@ insertNames('s_6', 16, 18);
 insertNames('s_7', 19, 21);
 insertNames('s_8', 22, 24);
 
+
+// 새로고침 버튼 '센세'
+document.getElementById('refreshButton').addEventListener('click', function () {
+  location.reload();
+});
+
+
