@@ -1,0 +1,21 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <hr>
+  <a href="{% url "my_app:create" %}">CREATE</a>
+  <hr>
+  {% for article in articles %}
+    <p>{{ article.pk }}번째 제출</p>
+    <p>제목: {{ article.title }}</p>
+    <p>제출 내용: <img src="{{ article.image.url }}" alt="#" width="100px" height="100px"></p>
+    <hr>
+  {% endfor %}
+</body>
+</html>
