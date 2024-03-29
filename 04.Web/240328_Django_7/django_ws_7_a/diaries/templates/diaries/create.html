@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>일기 작성</h1>
+<form method="POST">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <input type="submit" value="저장">
+</form>
+
+{% endblock content %}
