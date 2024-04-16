@@ -42,16 +42,25 @@
       const ulTag = document.querySelector("ul");
       ulTag.classList.add("list-group");
 
-      const liTags = document.querySelectorAll("li");
-      console.log(liTags);
-      let count = 1;
-      for (let liTag of liTags) {
-        if (count == 2) {
+      // const liTags = document.querySelectorAll("li");
+      // console.log(liTags);
+      // let count = 1;
+      // for (let liTag of liTags) {
+      //   if (count == 2) {
+      //     liTag.setAttribute("aria-current", true);
+      //     liTag.classList.add("active");
+      //   }
+      //   liTag.classList.add("list-group-item");
+      //   count++;
+      // }
+      // even ? 짝수 odd ? 홀수 nth, 2nth(2배수), 3nth(3배수)
+      for (let i = 1; i <= 4; i++) {
+        const liTag = document.querySelector(`li:nth-child(${i})`);
+        if (i == 2) {
           liTag.setAttribute("aria-current", true);
           liTag.classList.add("active");
         }
         liTag.classList.add("list-group-item");
-        count++;
       }
     </script>
   </body>
