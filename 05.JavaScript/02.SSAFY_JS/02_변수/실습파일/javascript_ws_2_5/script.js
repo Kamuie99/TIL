@@ -22,9 +22,20 @@ const citiesInfo = [
 for (const info of citiesInfo) {
   let printkey; let printvalue;
   for (key in info) {
-    (key === 'city' ? printkey = '수도' : printkey = key);
-    (Array.isArray(info[key]) ? printvalue = info[key][2] : printvalue = info[key]);
+    key === 'city' ? printkey = '수도' : printkey = key;
+    Array.isArray(info[key]) ? printvalue = info[key][2] : printvalue = info[key];
     console.log(`${printkey} : ${printvalue}`);
   }
   console.log();
 }
+
+// for (const cityInfo of citiesInfo) {
+//   let printKey
+//   let printValue
+//   for (key in cityInfo) {
+//     key === 'city' ? printKey = '수도' : printKey = key
+//     Array.isArray(cityInfo[key]) ? printValue = cityInfo[key][2] : printValue = cityInfo[key];
+//     console.log(`${printKey} : ${printValue}`)
+//   }
+//   console.log(' ')
+// }
