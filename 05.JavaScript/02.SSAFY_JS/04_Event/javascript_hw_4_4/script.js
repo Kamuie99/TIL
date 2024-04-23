@@ -23,7 +23,7 @@ function addTodo(event) {
 
     // 삭제 버튼을 클릭하면 해당 li element를 삭제한다
     deleteBtn.addEventListener('click', () => {
-      liTag.remove(liTag)
+      liTag.remove()
     })
 
     // li element를 클릭하면 취소선이 토글된다.
