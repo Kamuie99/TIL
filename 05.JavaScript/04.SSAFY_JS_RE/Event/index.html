@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .bg-color {
+      background-color: #f0f0f0;
+      padding: 20px;
+      margin: 20px;
+    }
+
+    .fs-2 {
+      font-size: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <h2>Input</h2>
+    <input type="text" class="text-input">
+    <span class="warning" style="color: red; display: none;">글자 수를 초과하였습니다.</span>
+    <p></p>
+  </div>
+  <div>
+    <h2>Color</h2>
+    <input type="text" class="color-input">
+  </div>
+
+  <script>
+    // 아래에 코드 작성
+    const inputTag = document.querySelector('.text-input')
+    const pTag = document.querySelector('p')
+
+    // 작성하는 텍스트는 실시간으로 p 요소 컨텐츠에 입력된다.
+    inputTag.addEventListener('input', () => {
+      const inputValue = inputTag.value
+      pTag.textContent = inputValue
+    })
+    
+    // input 요소에 focus가 잡히면 p요소의 폰트 크기 2rem, 배경 컬러를 회색으로 변경
+    inputTag.addEventListener('focus', () => {
+      pTag.classList.add('fs-2', 'bg-color')
+    })
+
+    // input 요소에 focus가 해제되면 스타일 해제
+    inputTag.addEventListener('blur', () => {
+      pTag.classList.remove('fs-2', 'bg-color')
+    })
+
+    const warning = document.querySelector('.warning')
+    inputTag.addEventListener('input', () => {
+      const inputValue = inputTag.value
+      if(inputValue.length > 5) {
+        warning.style.display = 'block'
+        pTag.style.display = 'none';
+      } else {
+        warning.style.display = 'none';
+        pTag.style.display = 'block'
+      }
+    })
+
+    const colorInput = document.querySelector('.color-input')
+    colorInput.addEventListener('input', () => {
+      pTag.style.color = colorInput.value
+    })
+
+  </script>
+</body>
+
+</html>

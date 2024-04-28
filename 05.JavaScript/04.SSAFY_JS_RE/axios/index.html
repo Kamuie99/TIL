@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .photos img {
+      width: 500px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Mars Rover Photos - Step 3</h1>
+  <form class="search-form">
+    <div>
+      <select class="select-rover">
+        <option value="" selected disabled hidden>--- Select Rover name ---</option>
+        <option value="Curiosity">Curiosity</option>
+        <option value="Opportunity">Opportunity</option>
+        <option value="Spirit">Spirit</option>
+      </select>
+    </div>
+    <label for="input-sol">화성일 : </label>
+    <input type="number" class="input-sol" id="input-sol" min="0" max="4000">
+    <input type="submit" value="Search">
+  </form>
+  <div class="photos"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+    const API_KEY = ''
+  </script>
+</body>
+</html>
