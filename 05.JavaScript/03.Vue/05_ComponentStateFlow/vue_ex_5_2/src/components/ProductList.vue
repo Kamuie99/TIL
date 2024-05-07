@@ -1,0 +1,15 @@
+<template>
+  <li v-for="product in products" :key="product.id">
+    <ProductListItem :product="product"></ProductListItem>
+  </li>
+</template>
+
+<script setup>
+import ProductListItem from './ProductListItem.vue';
+
+defineProps({
+  products: Array
+})
+
+
+</script>
