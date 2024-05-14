@@ -51,10 +51,10 @@ defineComponent({
 	width: 100%;
 }
 .boxoffice-title {
-	margin-bottom: 40px;
-	margin-left: 40px;
+	margin-bottom: 20px;
+	margin-left: 60px;
 	font-size: 17px;
-	color: rgb(165, 165, 165);
+	color: black;
 }
 ._cont2 {
 	display: flex;

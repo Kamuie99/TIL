@@ -48,5 +48,6 @@ const submitForm = () => {
 }
 .buttonSubmit {
 	font-size: 50px;
+	cursor: pointer;
 }
 </style>

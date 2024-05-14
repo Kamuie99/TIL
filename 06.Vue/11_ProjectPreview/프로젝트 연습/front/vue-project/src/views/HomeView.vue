@@ -1,12 +1,12 @@
 <template>
   <main>
-    <div class="main-container-big _2">
-
-    </div>
-    <div class="main-container _1">
+    <div class="main-container _2">
       <BoxOffice/>
     </div>
-    <div class="main-container _2">
+    <div class="main-container _1">
+
+    </div>
+    <div class="main-container-big _2">
 
     </div>
   </main>
