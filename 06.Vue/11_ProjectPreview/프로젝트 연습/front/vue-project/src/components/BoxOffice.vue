@@ -51,7 +51,7 @@ defineComponent({
 	width: 100%;
 }
 .boxoffice-title {
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	margin-left: 60px;
 	font-size: 17px;
 	color: black;
