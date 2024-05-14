@@ -24,10 +24,10 @@ import img_1 from '@/assets/movie1.jpg'
 import img_2 from '@/assets/movie2.jpg'
 import img_3 from '@/assets/movie3.jpg'
 import img_4 from '@/assets/movie4.jpg'
-import img_5 from '@/assets/movie1.jpg'
-import img_6 from '@/assets/movie2.jpg'
-import img_7 from '@/assets/movie3.jpg'
-import img_8 from '@/assets/movie4.jpg'
+import img_5 from '@/assets/movie5.jpg'
+import img_6 from '@/assets/movie6.jpg'
+import img_7 from '@/assets/movie7.jpg'
+import img_8 from '@/assets/movie8.jpg'
 
 const slides = ref([img_1, img_2, img_3, img_4, img_5, img_6, img_7, img_8])
 

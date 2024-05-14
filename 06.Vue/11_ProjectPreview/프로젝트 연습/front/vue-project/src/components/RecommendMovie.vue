@@ -74,25 +74,28 @@ defineComponent({
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 20px;
-  margin-right: 20px;
-  height: 4vh;
+  margin-left: 40px;
+  margin-right: 40px;
+  height: 12vh;
+}
+.title-area > span {
   font-size: 20px;
 }
 .RecommendMovieTitle {
   font-size: 17px;
   color: black;
+  
 }
 .wrapper {
-  height: 88vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   align-items: center;
   background-color: #1b1b1b;
-  /* border-top-right-radius: 20px;
-  border-top-left-radius: 20px; */
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
 }
 .wrapper_title{
   color: rgb(165, 165, 165);

@@ -6,14 +6,16 @@ import { RouterLink, RouterView } from 'vue-router'
   <header class="header">
     <nav class="header-nav">
       <div class="nav-item nav-bar">
-        <RouterLink to="/foryou">For You</RouterLink>
         <RouterLink to="">Movies</RouterLink>
-        <RouterLink to="">Community</RouterLink>
-        <RouterLink to="">Nearby</RouterLink>
+        <RouterLink to="/foryou">For You</RouterLink>
+        <RouterLink to="">Comments</RouterLink>
+        <RouterLink to="">Theater</RouterLink>
+        <RouterLink to="">미정</RouterLink>
       </div>
       <div class="nav-item">
         <RouterLink to="/">
-          <img src="" alt="로고이미지">
+          <!-- <img src="" alt="로고이미지"> -->
+          로고자리
         </RouterLink>
       </div>
       <div class="nav-item">
@@ -44,8 +46,12 @@ import { RouterLink, RouterView } from 'vue-router'
   justify-content: space-between;
 }
 .nav-item {
-  width: 500px;
+  width: 400px;
   text-align: center;
+}
+.nav-item > a {
+  text-decoration: none;
+  color: rgb(165, 165, 165);
 }
 .nav-bar {
   display: flex;

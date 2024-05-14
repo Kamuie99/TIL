@@ -4,16 +4,16 @@
       <BoxOffice/>
     </div>
     <div class="main-container _1">
-
+      <MaintoRecommend/>
     </div>
     <div class="main-container-big _2">
-
     </div>
   </main>
 </template>
 
 <script setup>
 import BoxOffice from '@/components/BoxOffice.vue';
+import MaintoRecommend from '@/components/MaintoRecommend.vue';
 
 
 </script>

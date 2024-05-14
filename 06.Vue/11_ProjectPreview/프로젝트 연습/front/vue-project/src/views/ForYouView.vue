@@ -1,9 +1,9 @@
 <template>
 	<main>
-		<div class="main-container-big _1">
+		<div class="main-container-big _2">
 			<form @submit.prevent="submitForm" class="searchForm">
-				<div>
-					<!-- 추후 작성 예정-->
+				<div class="form-inner">
+					
 				</div>
 				<input type="submit" value="제출" class="buttonSubmit">
 			</form>
@@ -41,13 +41,21 @@ const submitForm = () => {
 }
 .searchForm {
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
 	align-items: center;
 	width: 100%;
 	height: 100%;
 }
 .buttonSubmit {
-	font-size: 50px;
+	margin-top: 40px;
+	font-size: 30px;
 	cursor: pointer;
+}
+.form-inner {
+	width: 100%;
+	height: 85%;
+	background-color: #1b1b1b;
+	border-bottom-left-radius: 40px;
+	border-bottom-right-radius: 40px;
 }
 </style>
